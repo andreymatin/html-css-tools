@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<title>CSS3 Shapes, Symbols and Badges</title>
+
+
+<h1>CSS3 Shapes, Symbols and Badges</h1>
+
+<h2>Shapes</h2>
+
+<!-- Triangle Up -->
+<h3>Triangle Up</h3>
+
+<style>
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #000;
+}
+</style>
+<div class="triangle-up"></div>
+
+<!-- Triangle Down -->
+<h3>Triangle Down</h3>
+
+<style>
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #000;
+}		
+</style>
+<div class="triangle-down"></div>
+
+<!-- Square -->
+<h3>Square</h3>
+
+<style>
+.square {
+	width: 100px;
+	height: 100px;
+	background: #000;
+}
+</style>
+
+<div class="square"></div>
+
+<!-- Square with Rounded Corners -->
+<h3>Square with Rounded Corners</h3>
+
+<style>
+.square-rounded {
+	width: 100px;
+	height: 100px;
+	background: #000;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+</style>
+
+<div class="square-rounded"></div>
+
+<!-- Diamond -->
+<h3>Diamond</h3>
+
+<style>
+.diamond {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: #000;
+	position: relative;
+	top: -50px;
+}
+
+.diamond:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: #000;
+}
+</style>
+
+<div class="diamond"></div>
+
+<!-- Kite -->
+<h3>Kite</h3>
+
+<style>
+.kite {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 30px solid #000;
+	position: relative;
+	top: -50px;
+	margin-bottom: 50px;
+}
+.kite:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 30px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 100px solid #000;
+}
+</style>
+
+<div class="kite"></div>
+
+<!-- Diamond (transform: rotate)-->
+<h3>Diamond (transform: rotate)</h3>
+
+<style>
+.diamond-transform {
+	width: 100px;
+	height: 100px;
+	background: #000;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+	margin-left: 20px;
+}
+</style>
+
+<div class="diamond-transform"></div>
+
+<!-- Rhombus -->
+<h3>Rhombus</h3>
+
+<style>
+
+.rhombus {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 70px solid #000;
+	position: relative;
+	top: -50px;
+}
+
+.rhombus:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 70px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid #000;
+}
+
+</style>
+
+<div class="rhombus"></div>
+
+
+<!-- Rectangle -->
+<h3>Rectangle</h3>
+
+<style>
+.rectangle {
+	width: 200px;
+	height: 100px;
+	background: #000;
+}
+</style>
+
+<div class="rectangle"></div>
+
+<!-- Trapezoid -->
+<h3>Trapezoid</h3>
+
+<style>
+.trapezoid {
+	width: 100px;
+	height: 0;
+
+	border-bottom: 100px solid #000;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+</style>
+
+<div class="trapezoid"></div>
+
+<!-- Parallelogram -->
+<h3>Parallelogram</h3>
+
+<style>
+.parallelogram {
+	width: 150px;
+	height: 100px;
+	background: #000;
+	margin-left: 20px;
+
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg);
+}
+</style>
+
+<div class="parallelogram"></div>
+
+<!-- Pentagon -->
+<h3>Pentagon</h3>
+
+<style>
+.pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #000 transparent;
+}
+
+.pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #000;
+}				
+</style>
+
+<div class="pentagon"></div>
+
+<!-- Hexagon -->
+<h3>Hexagon</h3>
+
+<style>
+.hexagon {
+	width: 100px;
+	height: 55px;
+	background: #000;
+	position: relative;
+}
+
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid #000;
+}
+
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid #000;
+}
+</style>
+
+<div class="hexagon"></div>
+
+<!-- Octagon -->
+<h3>Octagon</h3>
+
+<style>
+.octagon {
+	width: 100px;
+	height: 100px;
+	background: #000;
+	position: relative;
+}
+
+.octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 29px solid #000;
+	border-left: 29px solid #fff;
+	border-right: 29px solid #fff;
+	width: 42px;
+	height: 0;
+}
+
+.octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 29px solid #000;
+	border-left: 29px solid #fff;
+	border-right: 29px solid #fff;
+	width: 42px;
+	height: 0;
+}
+</style>
+
+<div class="octagon"></div>
+
+<!-- Circle -->
+<h3>Circle</h3>
+
+<style>
+.circle {
+	width: 100px;
+	height: 100px;
+	background: #000;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+</style>
+
+<div class="circle"></div>
+
+<!-- Ellipse -->
+<h3>Ellipse</h3>
+
+<style>
+.ellipse {
+	width: 200px;
+	height: 100px;
+	background: #000;
+	-webkit-border-radius: 100px / 50px;
+	-moz-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+</style>
+
+<div class="ellipse"></div>
+
+<!-- Quatrefoil -->
+<h3>Quatrefoil</h3>
+
+<style>
+.quatrefoil {
+	width: 200px;
+	height: 100px;
+	background: #000;
+	-webkit-border-radius: 100px / 50px;
+	-moz-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	position: relative;
+	margin: 50px 0;
+}
+
+.quatrefoil:before {
+	content: "";
+	width: 100px;
+	height: 200px;
+	background: #000;
+	-webkit-border-radius: 50px / 100px;
+	-moz-border-radius: 50px / 100px;
+	border-radius: 50px / 100px;
+	position: absolute;
+	left: 50%;
+	top: -50%;
+	margin-left: -50px;
+}
+</style>
+
+<div class="quatrefoil"></div>
+
+
+
+<h2>Symbols</h2>
+
+<!-- Heart  -->
+<h3>Heart </h3>
+
+<style>
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #000;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+</style>
+
+<div class="heart"></div>
+
+<!-- Egg -->
+<h3>Egg</h3>
+
+<style>
+.egg {
+   display:block;
+   width: 100px;
+   height: 140px;
+   background-color: #000;
+   -webkit-border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   -moz-border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+</style>
+
+<div class="egg"></div>
+
+<!-- Star (5-points)  -->
+<h3>Star (5-points) </h3>
+
+<style>
+.star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: #000;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #000;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+   transform:      rotate(35deg);
+}
+.star-five:before {
+   border-bottom: 80px solid #000;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+   transform:      rotate(-35deg);
+}
+.star-five:after {
+   position: absolute;
+   display: block;
+   color: #000;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #000;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   transform:      rotate(-70deg);
+   content: '';
+}	
+</style>
+
+<div class="star-five"></div>
+
+<!-- Star (6-points) -->
+<h3>Star (6-points)</h3>
+
+<style>
+.star-six {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #000;
+	position: relative;
+}
+.star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #000;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+</style>
+
+<div class="star-six"></div>
+
+
+</html>

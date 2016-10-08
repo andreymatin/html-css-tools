@@ -1,0 +1,139 @@
+/**
+ * Mixins and wrappers
+ */
+
+// Box Shadow
+.box-shadow (@value) {
+	-webkit-box-shadow: @value;
+	-moz-box-shadow: @value;
+	box-shadow: @value;
+}
+
+.box-shadow-none {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+// Background Clip
+.background-clip(@argument: padding-box) {
+  -moz-background-clip: @argument;
+  -webkit-background-clip: @argument;
+  background-clip: @argument;
+}
+
+// Border Radius
+.border-radius (@value: 4px) {
+	-webkit-border-radius: @value;
+	-moz-border-radius: @value;
+	border-radius: @value;
+}
+
+// Reflection
+.reflect (@length: 50%, @opacity: 0.2){
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
+}
+
+/**
+ * User Select
+ * From http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting
+ */
+.user-select (@value: none) {
+	-webkit-touch-callout: @val;
+	-webkit-user-select: @val;
+	-khtml-user-select: @val;
+	-moz-user-select: @val;
+	-ms-user-select: @val;
+	user-select: @val;
+}
+
+// Opacity
+.opacity(@value: 1) {
+	@ie_opacity: @value * 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ie_opacity})";
+	filter: ~"alpha(opacity=@{ie_opacity})";
+	opacity: @value;
+}
+
+// Placeholder Text Color
+.placeholder-color(@color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+		color: @color;
+		.opacity();
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: @color;
+		.opacity();
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: @color;
+		.opacity();
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color: @color;
+		.opacity();
+	}
+}
+
+textarea, 
+input {
+	.placeholder-color(@c9);
+}
+
+// Text Selection Highlighting
+.text-highlighting(@color, @background) {
+	::-webkit-selection{ background:@background; color: @color; }
+	::-moz-selection{ background:@background; color: @color; }
+	::selection{ background:@background; color: @color; }
+}
+
+/* For Top and Left Position */
+.position(@top, @left) {
+	position: absolute;
+	top: @top;
+	left: @left;
+}
+
+// Full Page Background Image
+.full-page-background(@url) {
+	background: url(@url) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+}
+
+// Center-align a block level element
+.center-block() {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+// Clearfix for modern browsers
+.clearfix() {
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Reset filters for IE
+.reset-filter() {
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}

@@ -1,0 +1,51 @@
+/**
+ * Transition
+ */
+
+/* Transition Animation */
+.transition (@value) {
+	-webkit-transition: @value;
+	-moz-transition: @value;
+	-ms-transition: @value;
+	-o-transition: @value;
+	transition: @value;
+}
+
+.transition-delay(@delay:0) {
+	-webkit-transition-delay: @delay;
+	-moz-transition-delay: @delay;
+	-o-transition-delay: @delay;
+	-ms-transition-delay: @delay;
+	transition-delay: @delay;
+}
+
+.transition-duration(@duration:200ms) {
+	-webkit-transition-duration: @duration;
+	-moz-transition-duration: @duration;
+	-o-transition-duration: @duration;
+	-ms-transition-duration: @duration;
+	transition-duration: @duration;
+}
+
+.transition-property(@property:all) {
+	-webkit-transition-property: @property;
+	-moz-transition-property: @property;
+	-o-transition-property: @property;
+	-ms-transition-property: @property;
+	transition-property: @property;
+}
+
+.transition-timing-function(@function:ease) {
+	-webkit-transition-timing-function: @function;
+	-moz-transition-timing-function: @function;
+	-o-transition-timing-function: @function;
+	-ms-transition-timing-function: @function;
+	transition-timing-function: @function;
+}
+
+.backface-visibility(@visibility) {
+	-webkit-backface-visibility: @visibility;
+	-moz-backface-visibility: @visibility;
+	-ms-backface-visibility: @visibility;
+	backface-visibility: @visibility;
+}

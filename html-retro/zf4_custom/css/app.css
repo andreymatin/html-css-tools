@@ -1,0 +1,106 @@
+/* Selection */
+::-webkit-selection{background:#3c5485;color:#fff}
+::-moz-selection{background:#3c5485;color:#fff}
+::selection{background:#3c5485;color:#fff}
+
+/* Placeholder */
+::-webkit-input-placeholder { color: #ccc; }
+:-moz-placeholder { color: #ccc; }
+::-moz-placeholder { color: #ccc; }
+:-ms-input-placeholder { color: #ccc; }
+
+/* Reset */
+a {
+	-webkit-transition: all 0.2s; 
+	-moz-transition: all 0.2s; 
+	-o-transition: all 0.2s; 
+	transition: all 0.2s;  	
+	
+	outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a:focus {
+	outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, ul, li, p, form {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+}
+
+button {
+	cursor: pointer;
+}
+
+.mobile {
+	display: none;
+}
+
+/* Header */
+.header {
+}
+
+/* Footer */
+.footer {
+}
+
+
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.mobile {
+		display: block;
+	}
+	
+	.pc {
+		display: none;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.mobile {
+		display: block;
+	}
+	
+	.pc {
+		display: none;
+	}	
+
+}
+
+/* ZF Breakpoints */
+@media only screen and (min-width: 1441px) {/* Very large screens */}
+@media only screen and (max-width: 1279px) and (min-width: 768px) {/* Medium screens */}
+@media only screen and (max-width: 767px) {/* Small screens */}
+@media screen and (orientation: landscape) {/* Landscape Orientation */}
+@media screen and (orientation: portrait) {/* Portrait Orientation */}
+
+/* Breakpoints */
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:481px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }

@@ -1,0 +1,27 @@
+{
+	"name": "html5-experimental",
+	"version": "1.0.0",
+	"homepage": "https://github.com/andreymatin/html5-experimental",
+	"author": {
+		"name": "Andrey Matin",
+		"web": "http://andreymatin.com"
+	},
+	"description": "HTML5 template for CSS, HTML and JS experiments",
+	"main": "index.html",
+	"keywords": [
+		"html5",
+		"css",
+		"js",
+		"css3"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreymatin/html5-experimental"
+	},
+	"licenses": [
+	{
+		"type": "MIT",
+		"url": "https://github.com/mateuszkocz/3l/blob/master/3L/LICENCES.md"
+		}
+	]
+}

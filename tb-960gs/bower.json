@@ -1,0 +1,26 @@
+{
+	"name": "tb-960gs",
+	"version": "1.0.0",
+	"homepage": "https://github.com/andreymatin/tb-960gs",
+	"author": {
+		"name": "Andrey Matin",
+		"web": "http://andreymatin.com"
+	},
+	"description": "Twitter Bootstrap + 960gs",
+	"main": "index.html",
+	"keywords": [
+		"bootstrap",
+		"html5",
+		"960gs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreymatin/tb-960gs"
+	},
+	"licenses": [
+	{
+		"type": "MIT",
+		"url": "https://github.com/mateuszkocz/3l/blob/master/3L/LICENCES.md"
+		}
+	]
+}

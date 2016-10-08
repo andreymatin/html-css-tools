@@ -1,0 +1,28 @@
+{
+	"name": "css3-shapes-and-badges",
+	"version": "1.0.2",
+	"homepage": "https://github.com/andreymatin/css3-shapes-and-badges",
+	"author": {
+		"name": "Andrey Matin",
+		"web": "http://andreymatin.com"
+	},
+	"description": "Pure CSS3 Shapes and Awesome Retro Badges + LESS + HTML5",
+	"main": "index.html",
+	"keywords": [
+		"css3",
+		"html5",
+		"less",
+		"shapes",
+		"badges"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreymatin/css3-shapes-and-badges"
+	},
+	"licenses": [
+	{
+		"type": "MIT",
+		"url": "https://github.com/mateuszkocz/3l/blob/master/3L/LICENCES.md"
+		}
+	]
+}
